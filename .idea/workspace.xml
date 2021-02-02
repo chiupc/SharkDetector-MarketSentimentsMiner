@@ -149,6 +149,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1611235295142" />
+    <state x="784" y="422" key="Github.CreateGistDialog" timestamp="1612277341883">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="784" y="422" key="Github.CreateGistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612277341883" />
     <state width="1877" height="205" key="GridCell.Tab.0.bottom" timestamp="1612197859120">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -169,9 +173,9 @@
     </state>
     <state width="1877" height="279" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1611243224912" />
     <state width="1877" height="205" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1612197859120" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1612277328874">
+    <state x="461" y="165" key="SettingsEditor" timestamp="1612277405064">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1612277328874" />
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1612277405064" />
   </component>
 </project>
