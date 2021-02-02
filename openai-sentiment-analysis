@@ -1,0 +1,4 @@
+Given a tweet, classify it into one of 4 categories: Positive, Negative, Neutral, or Mixed.
+
+Tweet: "For me personally 8% ADBE would be too much. Would rather diversify that position with MSFT."
+Sentiment:

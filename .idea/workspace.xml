@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9b5b9834-f90c-4980-b3be-4bdac97f8fc9" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="C:\Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1mbhvi5GfKUKkt3UGwNbmBv7lkK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\SharkDetector\src\yf-conversations-fiberv2" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Build.start server.go">
+    <configuration name="go build protocol.go router.go server.go conversations_handler.go" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="yf-conversations-fiberv2" />
+      <working_directory value="$PROJECT_DIR$" />
+      <parameters value="-loglevel=debug" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/protocol.go|$PROJECT_DIR$/router.go|$PROJECT_DIR$/server.go|$PROJECT_DIR$/conversations_handler.go" />
+      <package value="yf-conversations-fiberv2" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build yf_handlers.go yf_conversations_handler.go server.go router.go protocol.go" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="yf-conversations-fiberv2" />
+      <working_directory value="$PROJECT_DIR$" />
+      <parameters value="-loglevel=debug" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/yf_handlers.go|$PROJECT_DIR$/yf_conversations_handler.go|$PROJECT_DIR$/server.go|$PROJECT_DIR$/router.go|$PROJECT_DIR$/protocol.go" />
+      <package value="yf-conversations-fiberv2" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="start server.go" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="yf-conversations-fiberv2" />
+      <working_directory value="$PROJECT_DIR$" />
+      <parameters value="-loglevel=debug" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/env_helper.go|$PROJECT_DIR$/protocol.go|$PROJECT_DIR$/router.go|$PROJECT_DIR$/router_handler.go|$PROJECT_DIR$/server.go|$PROJECT_DIR$/twitter_handler.go|$PROJECT_DIR$/validator.go|$PROJECT_DIR$/yf_conversations_handler.go|$PROJECT_DIR$/file_utils.go" />
+      <package value="yf-conversations-fiberv2" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Go Build.go build protocol.go router.go server.go conversations_handler.go" />
+      <item itemvalue="Go Build.go build yf_handlers.go yf_conversations_handler.go server.go router.go protocol.go" />
+      <item itemvalue="Go Build.start server.go" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9b5b9834-f90c-4980-b3be-4bdac97f8fc9" name="Default Changelist" comment="" />
+      <created>1609768429337</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609768429337</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../.." />
+    </ignored-roots>
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="440" y="268" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611235369563">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="268" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1611235369563" />
+    <state x="741" y="413" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1612102469972">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="741" y="413" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1610889735741" />
+    <state x="741" y="413" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1612102469972" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1611235295142">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1611235295142" />
+    <state width="1877" height="205" key="GridCell.Tab.0.bottom" timestamp="1612197859120">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1611243224912" />
+    <state width="1877" height="205" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1612197859120" />
+    <state width="1877" height="205" key="GridCell.Tab.0.center" timestamp="1612197859120">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="279" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1611243224912" />
+    <state width="1877" height="205" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1612197859120" />
+    <state width="1877" height="205" key="GridCell.Tab.0.left" timestamp="1612197859120">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="279" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1611243224912" />
+    <state width="1877" height="205" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1612197859120" />
+    <state width="1877" height="205" key="GridCell.Tab.0.right" timestamp="1612197859120">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="279" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1611243224912" />
+    <state width="1877" height="205" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1612197859120" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1612277328874">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1612277328874" />
+  </component>
+</project>
