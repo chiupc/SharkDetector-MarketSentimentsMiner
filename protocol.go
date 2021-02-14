@@ -14,6 +14,17 @@ type TwitterRecentSearch struct {
 	EndTime   int64   `json:"endTime" validate:"required"`
 }
 
+type RedditRecentSearch struct {
+	Quote     string `json:"quote" validate:"required"`
+	StartTime int64    `json:"startTime" validate:"required"`
+	EndTime   int64   `json:"endTime" validate:"required"`
+}
+
+type TimeRange struct{
+	StartTime int64    `json:"startTime" validate:"required"`
+	EndTime   int64   `json:"endTime" validate:"required"`
+}
+
 type ConversationsResult struct {
 	Filename string
 	LineNum int

@@ -6,10 +6,17 @@ import (
 	"fmt"
 	"github.com/joho/godotenv"
 	"github.com/sirupsen/logrus"
+	"os"
+	"strings"
 )
 
 var logger = logrus.New()
 var th *TwitterApiHandler
+var r *RedditApiHandler
+
+var redditSearchTypes map[string]bool
+var redditTextFields map[string]bool
+var redditSearchTypeFields map[string][]string
 
 func initLogger() {
 	//initialize logger
@@ -34,9 +41,30 @@ func initLogger() {
 	//logger.SetReportCaller(true)
 }
 
+func setConstants(){
+	//reddit
+	redditSearchTypes = make(map[string]bool)
+	envRedditSearchTypes := os.Getenv("REDDIT_SEARCH_TYPES")
+	envRedditSearchTypes_ := strings.Split(envRedditSearchTypes,",")
+	redditSearchTypeFields = make(map[string][]string)
+	for _, redditSearchType := range envRedditSearchTypes_{
+		redditSearchTypes[redditSearchType] = true
+		redditSearchTypeFields[redditSearchType] = strings.Split(os.Getenv("REDDIT_" + strings.ToUpper(redditSearchType) + "_FIELDS"),",")
+	}
+
+	redditTextFields = make(map[string]bool)
+	envRedditTextFields := os.Getenv("REDDIT_TEXT_FIELDS")
+	envRedditTextFields_ := strings.Split(envRedditTextFields,",")
+	for _, redditTextField := range envRedditTextFields_{
+		redditTextFields[redditTextField] = true
+	}
+
+}
+
 func main() {
 	//load environment variables from .env file
 	godotenv.Load(".env")
+	setConstants()
 	initLogger()
 	app := initRouter()
 
@@ -56,6 +84,8 @@ func main() {
 	//create new twitter_handler with maximum connection to each host
 	th = NewTwitterApiHandler()
 	th.initNetClient()
+	r = NewRedditApiHandler()
+	r.initNetClient()
 
 	app.Listen(":3000")
 }

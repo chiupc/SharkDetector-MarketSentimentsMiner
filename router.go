@@ -1,9 +1,6 @@
 package main
 
 import (
-	"context"
-	"crypto/rand"
-	"fmt"
 	"github.com/gofiber/fiber/v2"
 	logging "github.com/gofiber/fiber/v2/middleware/logger"
 	"github.com/gofiber/fiber/v2/middleware/requestid"
@@ -27,23 +24,16 @@ func initRouter() *fiber.App{
 	})
 
 	v1 := app.Group("/v1",setBackgroundContext)
-	v1.Post("/yf/conversations/csv", timeout.New(yfConversations, 60 * time.Second))
-	v1.Post("/twitter/tweets/csv", timeout.New(twitterRecentTweets, 60 * time.Second))
-
+	v1.Use(validateInputs)
+	//yahoo finance group
+	v1Yf := v1.Group("/yf")
+	v1Yf.Post("/conversations/csv", timeout.New(yfConversationsHandler, time.Duration(getEnvInt64("REQUEST_TIMEOUT")) * time.Second))
+	//twitter group
+	v1Twitter := v1.Group("/twitter")
+	v1Twitter.Post("/tweets/csv", timeout.New(twitterRecentTweetsHandler, time.Duration(getEnvInt64("REQUEST_TIMEOUT")) * time.Second))
+	//reddit group
+	v1Reddit := v1.Group("/reddit")
+	v1RedditSearch := v1Reddit.Group("/:search_type",validateRedditInput)
+	v1RedditSearch.Post("/csv", timeout.New(redditSearchHandler, time.Duration(getEnvInt64("REQUEST_TIMEOUT")) * time.Second))
 	return app
-}
-
-//middleware
-func setBackgroundContext(c *fiber.Ctx) error {
-	b := make([]byte, 16)
-	_, err := rand.Read(b)
-	if err != nil {
-		logger.Error(err)
-	}
-	uuid := fmt.Sprintf("%x-%x-%x-%x-%x", b[0:4], b[4:6], b[6:8], b[8:10], b[10:])
-	//uuid := utils.UUID()
-	logger.Debug(fmt.Sprintf("Setting context id... %s",uuid))
-	ctx := context.WithValue(context.Background(), "ctx-id", uuid)
-	c.Locals("ctx",ctx)
-	return c.Next()
 }

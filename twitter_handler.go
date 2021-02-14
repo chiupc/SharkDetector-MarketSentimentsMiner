@@ -153,7 +153,11 @@ func (t *TwitterApiHandler) jsonToCSV(ctx context.Context, filename string, body
 		//ensure the line is always in correct sequence
 		var strs []string
 		for _, header := range headers{
-			strs = append(strs, t.cleanup(data_.(map[string]interface{})[header].(string)))
+			if header == "text"{
+				strs = append(strs, t.cleanup(fmt.Sprintf("\"%v\"",data_.(map[string]interface{})[header])))
+			}else {
+				strs = append(strs, t.cleanup(fmt.Sprintf("%v", data_.(map[string]interface{})[header])))
+			}
 		}
 		logger.Debug(strs)
 		line := strings.Join(strs, ",")

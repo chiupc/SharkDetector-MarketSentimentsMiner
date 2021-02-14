@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"github.com/go-playground/validator/v10"
 )
 
@@ -22,6 +23,27 @@ func ValidateStruct(requestConversations YFRequestConversations) []*ErrorRespons
 			element.Value = err.Param()
 			errors = append(errors, &element)
 		}
+	}
+	return errors
+}
+
+func validateTimeRange(startTime int64, endTime int64,maxTimeRange int64)[]*ErrorResponse{
+	var errors []*ErrorResponse
+	if (endTime - startTime) < 0 {
+		var element ErrorResponse
+		element.FailedField = "search_parms"
+		element.Tag = "invalid-time-range"
+		element.Value = "end time is smaller than start time"
+		errors = append(errors, &element)
+		return errors
+	}
+	if (endTime - startTime) > maxTimeRange{
+		var element ErrorResponse
+		element.FailedField = "search_parms"
+		element.Tag = "invalid-time-range"
+		element.Value = fmt.Sprintf("time range exceeded maximum %d",maxTimeRange)
+		errors = append(errors, &element)
+		return errors
 	}
 	return errors
 }

@@ -46,7 +46,7 @@ func writeToCSV(ctx context.Context,filename string, linesToWrite []string){
 			log.Debug(fmt.Sprintf("Buffered : %d\n", writer.Buffered()))
 		}
 		writer.Flush()
-		defer file.Close(); fileMutex.Unlock()
+		defer file.Close();fileMutex.Unlock()
 	}
 }
 

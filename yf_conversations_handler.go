@@ -8,7 +8,6 @@ import (
 	"github.com/sirupsen/logrus"
 	"io/ioutil"
 	"net/http"
-	"strconv"
 	"strings"
 )
 
@@ -96,20 +95,18 @@ func collectMessage(ctx context.Context, quote string, startTime int64, endTime 
 	if len(lines) > 1 {
 		log.Debug(fmt.Sprintf("number of lines: %d", len(lines)))
 		//generateFileName = {quote}_{startTime}_{endTime}_{last_substrings_of_uuid}
-		filename := strings.Join([]string{quote,strconv.Itoa(int(startTime)),strconv.Itoa(int(endTime)), strings.Split(ctx.Value("ctx-id").(string),"-")[4]},"_")
+		filename := generateFileName(ctx, quote, int(startTime), int(endTime))
 		res := ConversationsResult{
 			Filename: filename,
 			LineNum: len(lines),
 		}
-		writeToCSV(ctx, filename, lines)
+		writeToCSV(ctx, filename+".csv", lines)
 		return &res, nil
 	}else{
 		log.Info("no result found")
 	}
 	return nil, nil
 }
-
-
 
 func getMessageBoardId(quote string) (string,error){
 	url := fmt.Sprintf("https://query1.finance.yahoo.com/v7/finance/quote?symbols=%s",quote)
