@@ -4,9 +4,10 @@ import (
 	"context"
 	"crypto/rand"
 	"fmt"
+	"github.com/chiupc/sentiment_analytic/client_handler"
 	"github.com/gofiber/fiber/v2"
-	"strings"
 	"path"
+	"strings"
 )
 
 func yfConversationsHandler(c *fiber.Ctx) error {
@@ -73,6 +74,59 @@ func validateRedditInput(c *fiber.Ctx) error{
 		return fiber.NewError(fiber.StatusNotFound,fmt.Sprintf("%s is not a valid reddit post type",c.Params("search_type")))
 	}
 	return c.Next()
+}
+
+//func GenerateTextSentiments(c *fiber.Ctx) error{
+//	c.Accepts("application/json")
+//	splits := strings.Split(c.Path(),"/")
+//	logger.Info(splits)
+//	logger.Info(string(c.Body()))
+//	q := new(YFRequestConversations)
+//	if err := c.BodyParser(q); err == nil{
+//		//c.Locals("ctx").(context.Context) => convert to context.Context
+//		if res, err := collectMessage(c.Locals("ctx").(context.Context), q.Quote, q.StartTime, q.EndTime); err != nil{
+//			c.Status(fiber.StatusBadRequest)
+//			return c.SendString("Bad Request")
+//		}else if res == nil && err == nil{
+//			c.Status(fiber.StatusNoContent)
+//			return c.SendString("Success")
+//		}else if res != nil && err == nil{
+//			logger.Info("Analyzing text sentiment...")
+//			client := client_handler.NewSentimentAnalyticGrpcClient()
+//			logger.Info(res.Filename)
+//			if err = client_handler.GetTextSentiments(client, res.Filename, "userText"); err != nil{
+//				return err
+//			}
+//			c.Status(fiber.StatusNoContent)
+//			return c.SendString("Success")
+//		}
+//	}
+//	c.Status(fiber.StatusBadRequest)
+//	return c.SendString("please check inputs")
+//}
+
+func GenerateTextSentiments(c *fiber.Ctx) error{
+	logger.Info("Analyzing text sentiment...")
+	client := client_handler.NewSentimentAnalyticGrpcClient()
+	logger.Info("created client")
+	//in := &sentiment_analytic.InputFile{
+	//	ColumnName: "userText",
+	//	FileName:   "NIO_1614600519_1614686919_83c4f5aabdbb",
+	//	Text:       nil,
+	//}
+	//if _, err := client.AnalyzeSentiment(context.Background(), in); err != nil{
+	//	return err
+	//}
+
+	if err := client_handler.GetTextSentiments(client, "NIO_1614600519_1614686919_83c4f5aabdbb", "userText"); err != nil{
+		return err
+	}
+	c.Status(fiber.StatusNoContent)
+	return c.SendString("Success")
+}
+
+func printSomething(){
+	fmt.Println("test")
 }
 
 //middleware

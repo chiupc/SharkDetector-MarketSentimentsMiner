@@ -30,7 +30,7 @@ func writeToCSV(ctx context.Context,filename string, linesToWrite []string){
 	//		log.Error(err)
 	//	}
 	//}
-	file, err := os.OpenFile(filepath.Join("tmp",filename), os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+	file, err := os.OpenFile(filepath.Join(os.Getenv("DATA_PATH"),filename), os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
 	if err != nil {
 		log.Error(err)
 	}else {

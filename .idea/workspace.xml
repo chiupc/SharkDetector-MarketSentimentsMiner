@@ -20,40 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b5b9834-f90c-4980-b3be-4bdac97f8fc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/reddit_handler.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/AAPL_1611760633_1612365433_06857a65734e.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/AAPL_1611760633_1612365433_117db7afc946.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/AAPL_1611760633_1612365433_6682265031b9.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/AAPL_1611760633_1612365433_6897a5c6c377.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/AAPL_1611760633_1612365433_74d7bc146e4b.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/AAPL_1611760633_1612365433_856a7aacdb6d.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/AAPL_1611760633_1612365433_cbb5110c0d05.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/AAPL_1611988839_1612684945_085fb431d4ce.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/AAPL_1611988839_1612684945_5827c7b4c3fd.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/AAPL_1611988839_1612684945_7c33bf4cd40f.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/AAPL_1611988839_1612684945_9fb717e47113.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/AAPL_1612104594_1612108194_ee195b72a948.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/AAPL_1612104594_1612709394_b7e685351a77.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/GME_1611988839_1612593639_8d38474f64d6.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/PYPL_1612177402_1612782202_47bb97c75be6.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/PYPL_1612177402_1612782202_48e2f7c33514" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/PYPL_1612177402_1612782202_97ec743057d1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/PYPL_1612177402_1612782202_a78d511f3fc5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/PYPL_1612177402_1612782202_c0ee00187713.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/PYPL_1612177402_1612782202_e8aa1651594a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/PYPL_1612177402_1612782202_eb40f7b1c20a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/PYPL_1612695802_1612782202_1d47c82b67e7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/router_handler_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/NIO_1614600519_1614686919_02af901ae00e.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/NIO_1614600519_1614686919_2989f083fd59.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/NIO_1614600519_1614686919_b5ef0b635d73.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/linux/sentiments-miner" beforeDir="false" afterPath="$PROJECT_DIR$/dist/linux/sentiments-miner" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/file_utils.go" beforeDir="false" afterPath="$PROJECT_DIR$/file_utils.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protocol.go" beforeDir="false" afterPath="$PROJECT_DIR$/protocol.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/router.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/router_handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/router_handler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/server.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter_handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/twitter_handler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validator.go" beforeDir="false" afterPath="$PROJECT_DIR$/validator.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yf_conversations_handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/yf_conversations_handler.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,18 +66,17 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\SharkDetector\src\yf-conversations-fiberv2" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.start server.go">
+  <component name="RunManager" selected="Go Test.router_handler_test.go">
     <configuration name="go build env_helper.go file_utils.go protocol.go router.go router_handler.go server.go twitter_handler.go validator.go yf_conversations_handler.go yf_conversations_handler_test.go" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
       <module name="yf-conversations-fiberv2" />
       <working_directory value="$PROJECT_DIR$" />
@@ -139,12 +116,28 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="router_handler_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="yf-conversations-fiberv2" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="FILE" />
+      <package value="yf-conversations-fiberv2" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/router_handler_test.go" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Go Build.go build protocol.go router.go server.go conversations_handler.go" />
       <item itemvalue="Go Build.go build yf_handlers.go yf_conversations_handler.go server.go router.go protocol.go" />
       <item itemvalue="Go Build.start server.go" />
       <item itemvalue="Go Build.go build env_helper.go file_utils.go protocol.go router.go router_handler.go server.go twitter_handler.go validator.go yf_conversations_handler.go yf_conversations_handler_test.go" />
+      <item itemvalue="Go Test.router_handler_test.go" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Test.router_handler_test.go" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -182,10 +175,14 @@
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
-    <state x="352" y="212" width="874" height="590" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1612590405575">
+    <state x="436" y="115" key="#SSH_Configurations" timestamp="1615614535035">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="352" y="212" width="874" height="590" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1612590405575" />
+    <state x="436" y="115" key="#SSH_Configurations/0.0.1536.824@0.0.1536.824" timestamp="1615614535035" />
+    <state x="352" y="212" width="874" height="590" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1615622436417">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="352" y="212" width="874" height="590" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1615622436417" />
     <state x="440" y="268" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1611235369563" />
     <state x="440" y="268" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612278904269" />
     <state x="741" y="413" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1612102469972">
@@ -193,42 +190,56 @@
     </state>
     <state x="741" y="413" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1610889735741" />
     <state x="741" y="413" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1612102469972" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1611235295142">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="94" y="100" width="1348" height="630" key="DirDiffDialog" timestamp="1615623104368">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="94" y="100" width="1348" height="630" key="DirDiffDialog/0.0.1536.824@0.0.1536.824" timestamp="1615623104368" />
+    <state x="592" y="218" key="FileChooserDialogImpl" timestamp="1615614525743">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="592" y="218" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1615614525743" />
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1611235295142" />
     <state x="784" y="422" key="Github.CreateGistDialog" timestamp="1612277341883">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="784" y="422" key="Github.CreateGistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612277341883" />
-    <state width="1877" height="230" key="GridCell.Tab.0.bottom" timestamp="1612802073422">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="744" height="170" key="GridCell.Tab.0.bottom" timestamp="1615623666350">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="123" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1612617699360" />
+    <state width="744" height="170" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1615623666350" />
     <state width="1877" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1611243224912" />
-    <state width="1877" height="230" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1612802073422" />
-    <state width="1877" height="230" key="GridCell.Tab.0.center" timestamp="1612802073422">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="230" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1614697615316" />
+    <state width="744" height="170" key="GridCell.Tab.0.center" timestamp="1615623666350">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="123" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1612617699360" />
+    <state width="744" height="170" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1615623666350" />
     <state width="1877" height="279" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1611243224912" />
-    <state width="1877" height="230" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1612802073422" />
-    <state width="1877" height="230" key="GridCell.Tab.0.left" timestamp="1612802073422">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="230" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1614697615316" />
+    <state width="744" height="170" key="GridCell.Tab.0.left" timestamp="1615623666350">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="123" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1612617699360" />
+    <state width="744" height="170" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1615623666350" />
     <state width="1877" height="279" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1611243224912" />
-    <state width="1877" height="230" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1612802073422" />
-    <state width="1877" height="230" key="GridCell.Tab.0.right" timestamp="1612802073422">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="230" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1614697615316" />
+    <state width="744" height="170" key="GridCell.Tab.0.right" timestamp="1615623666350">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="123" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1612617699360" />
+    <state width="744" height="170" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1615623666350" />
     <state width="1877" height="279" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1611243224912" />
-    <state width="1877" height="230" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1612802073422" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1612277405064">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="230" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1614697615316" />
+    <state x="369" y="115" width="1131" height="709" key="SettingsEditor" timestamp="1615617102755">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1612277405064" />
+    <state x="369" y="115" width="1131" height="709" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1615617102755" />
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1615594949449" />
+    <state x="82" y="158" key="ftp.server.browser" timestamp="1615617088836">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="82" y="158" key="ftp.server.browser/0.0.1536.824@0.0.1536.824" timestamp="1615617088836" />
+    <state x="797" y="362" key="publish.login" timestamp="1615616713517">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="797" y="362" key="publish.login/0.0.1536.824@0.0.1536.824" timestamp="1615616713517" />
     <state x="539" y="183" width="840" height="856" key="search.everywhere.popup" timestamp="1612682586144">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

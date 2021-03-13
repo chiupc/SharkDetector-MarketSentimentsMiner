@@ -69,7 +69,7 @@ func collectMessage(ctx context.Context, quote string, startTime int64, endTime 
 					if createdAt >= startTime {
 						createdAt := fmt.Sprintf("%d", createdAt)
 						userText := message_["details"].(map[string]interface{})["userText"].(string)
-						userText = strings.Replace(userText, "\n", " ", -1)
+						userText = "\"" + strings.Replace(userText, "\n", " ", -1) + "\""
 						nickname := meta["author"].(map[string]interface{})["nickname"].(string)
 						region := meta["locale"].(map[string]interface{})["region"].(string)
 						//build csv line

@@ -28,6 +28,7 @@ func initRouter() *fiber.App{
 	//yahoo finance group
 	v1Yf := v1.Group("/yf")
 	v1Yf.Post("/conversations/csv", timeout.New(yfConversationsHandler, time.Duration(getEnvInt64("REQUEST_TIMEOUT")) * time.Second))
+	v1Yf.Post("/coversations/analyze", timeout.New(GenerateTextSentiments, time.Duration(getEnvInt64("REQUEST_TIMEOUT")) * time.Second))
 	//twitter group
 	v1Twitter := v1.Group("/twitter")
 	v1Twitter.Post("/tweets/csv", timeout.New(twitterRecentTweetsHandler, time.Duration(getEnvInt64("REQUEST_TIMEOUT")) * time.Second))
